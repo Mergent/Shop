@@ -17,14 +17,50 @@ namespace Shop.Data.mocks
                 return new List<Car>
                 {
                     new Car {
-                        name = "Tesla",
-                        shortDesc = "",
-                        longDesc ="",
-                        img = "",
+                        name = "Tesla Model S",
+                        shortDesc = "Очень удобная",
+                        longDesc ="Красивый и быстрый. Но главное - очень тихий автомобиль",
+                        img = "/img/tes;a.jpg",
+                        price = 35000,
+                        isFavourite = true,
+                        available = true,
+                        Category = _categoryCars.AllCategories.First() },
+                    new Car {
+                        name = "Ford Fiesta",
+                        shortDesc = "Тихая и спокойная",
+                        longDesc ="Действительно очень удобно для городской жизни",
+                        img = "/img/ford.jpg",
+                        price = 55000,
+                        isFavourite = true,
+                        available = false,
+                        Category = _categoryCars.AllCategories.Last() },
+                    new Car {
+                        name = "Mercedes C class",
+                        shortDesc = "Уютный и большой",
+                        longDesc ="Тепло как дома, не тесно",
+                        img = "/img/mercedez.jpg",
                         price = 45000,
                         isFavourite = true,
                         available = true,
-                        Category = _categoryCars.AllCategories.First() }
+                        Category = _categoryCars.AllCategories.Last() },
+                    new Car {
+                        name = "BMW M3",
+                        shortDesc = "Дерзский и стильный",
+                        longDesc ="Очень дерзкий и очень стильный",
+                        img = "/img/bmv.jpg",
+                        price = 50000,
+                        isFavourite = false,
+                        available = false,
+                        Category = _categoryCars.AllCategories.Last() },
+                    new Car {
+                        name = "Toyota Camry",
+                        shortDesc = "Не Очень Удобная",
+                        longDesc ="Сложно кататься",
+                        img = "/img/netesla.jpg",
+                        price = 5000,
+                        isFavourite = false,
+                        available = true,
+                        Category = _categoryCars.AllCategories.Last() }
                 };
             }
         }

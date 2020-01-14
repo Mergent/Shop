@@ -7,6 +7,7 @@ namespace Shop.Data.Models
 {
     public class Car
     {
+     
         public int id { set; get; }
         public string name { set; get; }
         public string shortDesc { set; get; }
@@ -19,4 +20,6 @@ namespace Shop.Data.Models
         public virtual Category Category { set; get; }
 
     }
+
+
 }
